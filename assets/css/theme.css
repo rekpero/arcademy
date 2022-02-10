@@ -2759,16 +2759,23 @@ blockquote cite {
   display: block;
   padding-top: 9px;
   padding-bottom: 22px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 900;
   text-transform: uppercase;
   color: black;
 }
 
 .b-steps__info {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.4;
+  color: #333;
+}
+
+.b-steps__info-award {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.4;
   color: #333;
 }
 
@@ -4563,4 +4570,26 @@ blockquote cite {
   right: 16px;
   top: -20px;
   width: 40px;
+}
+
+
+.leftside, .rightside {
+  height: 50vh;
+  width: 100%;
+}
+
+.leftside {
+  background: white;
+}
+
+.rightside {
+  background: black;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .leftside, .rightside {
+    height: 100vh;
+
+  }
 }
