@@ -2146,7 +2146,7 @@ blockquote cite {
   font-weight: 800;
   text-align: left;
   letter-spacing: .2em;
-  /* font-style: 'roboto' !important; */
+
   text-transform: uppercase;
 }
 
@@ -2156,7 +2156,7 @@ blockquote cite {
     font-weight: 800;
     text-align: left;
     letter-spacing: .2em;
-    /* font-style: 'roboto' !important; */
+    padding: 25px;
     text-transform: uppercase;
   }
 }
@@ -4373,6 +4373,7 @@ blockquote cite {
       display: inline-flex;
       justify-content: center;
       align-items: center;
+      margin-left: 25px;
   }
 }
 
