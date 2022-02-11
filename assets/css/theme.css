@@ -2722,10 +2722,19 @@ blockquote cite {
 }
 
 .b-steps__item {
-  width: 25%;
+  width: 100%;
   margin-right: -3px;
   line-height: 1;
   letter-spacing: .05em;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .b-steps__item {
+    width: 100%;
+    margin-left: 25px;
+
+  }
 }
 
 .b-steps__title {
@@ -2740,7 +2749,7 @@ blockquote cite {
   display: inline-block;
   width: 11px;
   height: 11px;
-  content: '';
+  /* content: ''; */
   border-radius: 50%;
   background-color: #ddd;
 }
@@ -2751,7 +2760,7 @@ blockquote cite {
   left: 50%;
   width: 3000px;
   height: 1px;
-  content: '';
+  /* content: ''; */
   background-color: #eee;
 }
 
