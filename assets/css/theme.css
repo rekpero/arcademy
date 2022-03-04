@@ -4630,6 +4630,7 @@ blockquote cite {
   background-position: center;
   /* padding: 150px 0; */
   height: 100vh;
+  border: none !important;
 }
 
 .banner-right h1 {
@@ -4680,7 +4681,7 @@ blockquote cite {
 }
 
 .fullscreen-bg__video {
-    z-index: -1;
+    /* z-index: -1; */
     position: absolute;
     top: 0;
     left: 0;
