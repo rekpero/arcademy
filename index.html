@@ -27,11 +27,32 @@
     data-website-uuid="f96e24b0-c1b9-4c93-843f-7b6ac5230e09"
     >
   </script>
-
+  <script>
+  function getParams() {
+    var idx = document.URL.indexOf('?');
+    var params = new Array();
+    if (idx != -1) {
+        var pairs = document.URL.substring(idx + 1, document.URL.length).split('&');
+        for (var i = 0; i < pairs.length; i++) {
+            nameVal = pairs[i].split('=');
+            params[nameVal[0]] = nameVal[1];
+        }
+    }
+    return params;
+  }
+  console.log("CHECK ME OUT ME LOGGING");
+  var params = getParams();
+  console.log(unescape(params["utm_source"]));
+  </script>
 
 </head>
 
 <body class="loading">
+  <script>
+  console.log("again");
+  console.log(unescape(params["utm_source"]));
+  </script>
+
 
     <div class="">
       <div class="row no-gutters">
@@ -42,7 +63,7 @@
         <div class="main-slider__subtitle" style="font-family: NB International Pro, sans-serif; font-weight: 400; color: #000;">Build a Permaweb app, <strong style="font-weight: 800;">we’ll invest $100K</strong>.</div>
           <div class="CTA" style="text-align:left; padding-top: 50px;">
             <!-- <a href="https://mpvspqxnh77.typeform.com/to/eA4F5ugC" class="btns large module__text-cta" style="font-family: NB International Pro, sans-serif; font-weight: 800;">Get Started</a> -->
-            <button data-tf-popup="eA4F5ugC" data-tf-iframe-props="title=Registration Form" data-tf-medium="snippet"class="btns large module__text-cta" style="font-family: NB International Pro, sans-serif; font-size: 1.8rem; !important; font-weight: 400;">Get Started
+            <button data-tf-popup="eA4F5ugC" data-tf-iframe-props="title=Registration Form" data-tf-medium="snippet" data-tf-transitive-search-params="utm_source" data-tf-hidden="utm_source=xxxxx" class="btns large module__text-cta" style="font-family: NB International Pro, sans-serif; font-size: 1.8rem; !important; font-weight: 400;">Get Started
             </button>
             <script src="//embed.typeform.com/next/embed.js"></script>
           </div>
@@ -151,7 +172,7 @@
                 <br>
                 <!-- <a href="https://mpvspqxnh77.typeform.com/to/eA4F5ugC" class="btns large-bottom module__text-cta" style="font-family: NB International Pro, sans-serif; font-size: 1.8rem; !important; font-weight: 400;">Get Started</a> -->
 
-                <button data-tf-popup="eA4F5ugC" data-tf-iframe-props="title=Registration Form" data-tf-medium="snippet"class="btns large-bottom module__text-cta" style="font-family: NB International Pro, sans-serif; font-size: 1.8rem; !important; font-weight: 400;">Get Started
+                <button data-tf-popup="eA4F5ugC" data-tf-iframe-props="title=Registration Form" data-tf-medium="snippet" data-tf-transitive-search-params="utm_source" data-tf-hidden="utm_source=xxxxx" class="btns large-bottom module__text-cta" style="font-family: NB International Pro, sans-serif; font-size: 1.8rem; !important; font-weight: 400;">Get Started
                 </button>
                 <script src="//embed.typeform.com/next/embed.js"></script>
               </div>
