@@ -23,7 +23,7 @@
   <script
     type="text/javascript"
     src="https://app.termly.io/embed.min.js"
-    data-auto-block="on"
+    data-auto-block="off"
     data-website-uuid="f96e24b0-c1b9-4c93-843f-7b6ac5230e09"
     >
   </script>
@@ -44,6 +44,16 @@
   var params = getParams();
   console.log(unescape(params["utm_source"]));
   </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-228248285-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-228248285-1');
+</script>
 
 </head>
 
