@@ -20,11 +20,49 @@
   <!-- Global site tag (gtag.js) - Google Ads: 10861170358 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10861170358"></script>
   <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-10861170358'); </script>
+  <script
+    type="text/javascript"
+    src="https://app.termly.io/embed.min.js"
+    data-auto-block="off"
+    data-website-uuid="f96e24b0-c1b9-4c93-843f-7b6ac5230e09"
+    >
+  </script>
+  <script>
+  function getParams() {
+    var idx = document.URL.indexOf('?');
+    var params = new Array();
+    if (idx != -1) {
+        var pairs = document.URL.substring(idx + 1, document.URL.length).split('&');
+        for (var i = 0; i < pairs.length; i++) {
+            nameVal = pairs[i].split('=');
+            params[nameVal[0]] = nameVal[1];
+        }
+    }
+    return params;
+  }
+  console.log("CHECK ME OUT ME LOGGING");
+  var params = getParams();
+  console.log(unescape(params["utm_source"]));
+  </script>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-228248285-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-228248285-1');
+</script>
 
 </head>
 
 <body class="loading">
+  <script>
+  console.log("again");
+  console.log(unescape(params["utm_source"]));
+  </script>
+
 
     <div class="">
       <div class="row no-gutters">
@@ -35,7 +73,7 @@
         <div class="main-slider__subtitle" style="font-family: NB International Pro, sans-serif; font-weight: 400; color: #000;">Build a Permaweb app, <strong style="font-weight: 800;">we’ll invest $100K</strong>.</div>
           <div class="CTA" style="text-align:left; padding-top: 50px;">
             <!-- <a href="https://mpvspqxnh77.typeform.com/to/eA4F5ugC" class="btns large module__text-cta" style="font-family: NB International Pro, sans-serif; font-weight: 800;">Get Started</a> -->
-            <button data-tf-popup="eA4F5ugC" data-tf-iframe-props="title=Registration Form" data-tf-medium="snippet"class="btns large module__text-cta" style="font-family: NB International Pro, sans-serif; font-size: 1.8rem; !important; font-weight: 400;">Get Started
+            <button data-tf-popup="eA4F5ugC" data-tf-iframe-props="title=Registration Form" data-tf-medium="snippet" data-tf-transitive-search-params="utm_source,utm_medium,utm_campaign,utm_term,utm_content" data-tf-hidden="utm_source=xxxxx,utm_medium=xxxxx,utm_campaign=xxxxx,utm_term=xxxxx,utm_content=xxxxx" class="btns large module__text-cta" style="font-family: NB International Pro, sans-serif; font-size: 1.8rem; !important; font-weight: 400;">Get Started
             </button>
             <script src="//embed.typeform.com/next/embed.js"></script>
           </div>
@@ -144,7 +182,7 @@
                 <br>
                 <!-- <a href="https://mpvspqxnh77.typeform.com/to/eA4F5ugC" class="btns large-bottom module__text-cta" style="font-family: NB International Pro, sans-serif; font-size: 1.8rem; !important; font-weight: 400;">Get Started</a> -->
 
-                <button data-tf-popup="eA4F5ugC" data-tf-iframe-props="title=Registration Form" data-tf-medium="snippet"class="btns large-bottom module__text-cta" style="font-family: NB International Pro, sans-serif; font-size: 1.8rem; !important; font-weight: 400;">Get Started
+                <button data-tf-popup="eA4F5ugC" data-tf-iframe-props="title=Registration Form" data-tf-medium="snippet" data-tf-transitive-search-params="utm_source,utm_medium,utm_campaign,utm_term,utm_content" data-tf-hidden="utm_source=xxxxx,utm_medium=xxxxx,utm_campaign=xxxxx,utm_term=xxxxx,utm_content=xxxxx" class="btns large-bottom module__text-cta" style="font-family: NB International Pro, sans-serif; font-size: 1.8rem; !important; font-weight: 400;">Get Started
                 </button>
                 <script src="//embed.typeform.com/next/embed.js"></script>
               </div>
@@ -155,19 +193,24 @@
             <br>
             <br>
             <br>
-
-
       </main>
       <footer class="footer">
-        <div class="copyright" style="font-family: NB International Pro, sans-serif;" >
+        <div class="copyright" style="font-family: NB International Pro, sans-serif; display: infline-block;" >
 
           <br>
-          <p>Copyright 2022 © Arweave Build
+          <p>
+          Copyright 2022 © Arweave Build
+          <span>  &#183;  </span>
+          <a href="https://app.termly.io/document/terms-of-use-for-website/8cbca535-146e-4abc-9637-861090bd1b7c">Terms of Service</a>
+          <span>  &#183;  </span>
+          <a href="https://app.termly.io/document/terms-of-use-for-website/8cbca535-146e-4abc-9637-861090bd1b7c">Privacy Notice</a>
           </p>
+
 
           <br>
 
     </div>
+
   </footer>
   <!-- .footer-->
 <!-- </div> -->
@@ -211,6 +254,7 @@
 <script src="assets/js/custom.js"></script>
 <!-- Main slider-->
 <script src="assets/plugins/slider-pro/jquery.sliderPro.min.js"></script>
+
 </body>
 
 </html>
